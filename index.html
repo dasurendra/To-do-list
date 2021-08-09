@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Not to do task list in js</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>No To Do Task List</h1>
+
+			<div class="main">
+				<div class="form-box">
+					<form action="javascript: void(0)" onsubmit="handleOnSubmit(this)">
+						<input type="text" name="task" placeholder="Task name" required />
+						<input type="number" name="hr" placeholder="5" required />
+						<input type="submit" value="Add" />
+					</form>
+				</div>
+
+				<hr />
+				<section class="task-section">
+					<div class="to-do">
+						<h3>Task lists</h3>
+						<ul id="task-list"></ul>
+						<hr />
+						Total hours allocated <span id="totalHrs"></span> Hr of 168hr/week
+					</div>
+					<hr />
+					<div class="not-to-do">
+						<h3>Not To DO lists</h3>
+						<ul id="bad-list"></ul>
+						<hr />
+						Total hours saved <span id="totalBadHrs"></span> Hr/week
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
